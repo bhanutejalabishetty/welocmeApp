@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
            steps {
-                echo "${Version}"
+                echo "${params.Version}"
             }
         }
         stage('Deploy') {
