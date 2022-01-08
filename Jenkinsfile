@@ -1,6 +1,9 @@
 pipeline {
     agent any
-
+     parameters {
+         properties([parameters([string('Version')])])
+    }
+   
     stages {
         stage('Build') {
             steps {
