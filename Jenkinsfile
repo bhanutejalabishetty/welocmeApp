@@ -1,8 +1,6 @@
+properties([parameters([string('Version')])])
 pipeline {
     agent any
-     parameters {
-         properties([parameters([string('Version')])])
-    }
    
     stages {
         stage('Build') {
