@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 build quietPeriod: 5, job: 'welcome'
-                echo 'Hello World ${Version}'
+                echo "Hello World ${params.Version}"
             }
         }
         stage('Test') {
